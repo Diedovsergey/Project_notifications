@@ -3,6 +3,8 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using Project_Notifications.Droid.Notifications;
+using Project_Notifications.Notifications;
 
 namespace Project_Notifications.Droid
 {
@@ -25,7 +27,7 @@ namespace Project_Notifications.Droid
     {
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            // Register any platform specific implementations
+            containerRegistry.Register<INotificationManager, AndroidNotificationManager>();
         }
     }
 }
