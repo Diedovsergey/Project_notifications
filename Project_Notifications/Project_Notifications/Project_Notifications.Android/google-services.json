@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "580625872072",
+    "firebase_url": "https://dev-edu.firebaseio.com",
+    "project_id": "dev-edu",
+    "storage_bucket": "dev-edu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580625872072:android:3a567f10750887b3e9e1fd",
+        "android_client_info": {
+          "package_name": "project_notifications.dev_education.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580625872072-ggjma5a00puvrdi3suodiansgvkgkom9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4L7rqT2v7hH8YG1mrfatZs66xSU0ssNM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580625872072-ggjma5a00puvrdi3suodiansgvkgkom9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
