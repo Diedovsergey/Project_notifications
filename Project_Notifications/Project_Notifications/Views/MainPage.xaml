@@ -6,6 +6,7 @@
     Title="{Binding Title}">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Button Command="{Binding CreateNotificationCommand}" Text=" Create Notification !" />
         <Label Text="{Binding NotificationTitle}" />
         <Label Text="{Binding NotificationMessage}" />
     </StackLayout>

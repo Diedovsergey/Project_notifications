@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-using Android.App;
+﻿using Android.App;
 using Android.Content;
 using Android.Graphics;
 using Android.OS;
-using Android.Runtime;
 using Android.Support.V4.App;
-using Android.Views;
-using Android.Widget;
 using Project_Notifications.Notifications;
+using System;
 
 namespace Project_Notifications.Droid.Notifications
 {
@@ -46,10 +39,11 @@ namespace Project_Notifications.Droid.Notifications
             messageId++;
 
             Intent intent = new Intent(Application.Context, typeof(MainActivity));
+            intent.SetAction("onLocalNotificationReceived");
             intent.PutExtra(TitleKey, title);
             intent.PutExtra(MessageKey, message);
 
-            PendingIntent pendingIntent = PendingIntent.GetActivity(Application.Context, pendingIntentId, intent, PendingIntentFlags.OneShot);
+            PendingIntent pendingIntent = PendingIntent.GetActivity(Application.Context, pendingIntentId, intent, PendingIntentFlags.UpdateCurrent);
 
             NotificationCompat.Builder builder = new NotificationCompat.Builder(Application.Context, channelId)
                 .SetContentIntent(pendingIntent)
@@ -86,6 +80,7 @@ namespace Project_Notifications.Droid.Notifications
                 {
                     Description = channelDescription
                 };
+                //channel.SetShowBadge(true);
                 manager.CreateNotificationChannel(channel);
             }
 

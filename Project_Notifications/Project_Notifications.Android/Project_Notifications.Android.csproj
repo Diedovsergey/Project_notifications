@@ -74,12 +74,13 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Notifications\AndroidNotificationManager.cs" />
     <Compile Include="Notifications\BroadcastReciever.cs" />
+    <Compile Include="Notifications\MyFirebaseIIDService.cs" />
+    <Compile Include="Notifications\MyFirebaseMessagingService.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <GoogleServicesJson Include="google-services.json" />
-    <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>

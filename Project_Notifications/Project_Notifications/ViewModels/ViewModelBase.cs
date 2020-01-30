@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using Project_Notifications.Notifications;
+using Xamarin.Forms;
 
 namespace Project_Notifications.ViewModels
 {
@@ -20,8 +21,7 @@ namespace Project_Notifications.ViewModels
             set { SetProperty(ref _title, value); }
         }
 
-        public ViewModelBase(INavigationService navigationService,
-            INotificationManager notificationManager)
+        public ViewModelBase(INavigationService navigationService, INotificationManager notificationManager)
         {
             NavigationService = navigationService;
             NotificationManager = notificationManager;

@@ -19,6 +19,11 @@ namespace Project_Notifications
 
         public App(IPlatformInitializer initializer) : base(initializer) { }
 
+        public static T Resolve<T>()
+        {
+            return (Current as App).Container.Resolve<T>();
+        }
+
         protected override async void OnInitialized()
         {
             InitializeComponent();
